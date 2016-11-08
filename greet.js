@@ -66,3 +66,12 @@ var isFromGauteng = function(distanceG){
 var meter = isFromGauteng("GP");
 console.log(meter);
 assert.equal(isFromGauteng("GP"), true);
+
+var isFromLimpopo = function(longL){
+  long = longL.endsWith("2 L");
+
+  return long;
+}
+var feed = isFromLimpopo("2 L");
+console.log(feed);
+assert.equal(isFromLimpopo("2 L"), true);
