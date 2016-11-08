@@ -65,3 +65,4 @@ var isFromGauteng = function(distanceG){
 }
 var meter = isFromGauteng("GP");
 console.log(meter);
+assert.equal(isFromGauteng("GP"), true);
