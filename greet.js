@@ -48,3 +48,12 @@ var isFromCapeTown = function(routeC){
 var speed = isFromCapeTown("CA");
 console.log(speed);
 assert.equal(isFromCapeTown("CA"), true);
+
+var isFromPaarl = function(routeP){
+  limit = routeP.startsWith("CJ");
+
+  return limit;
+}
+var put = isFromPaarl("CJ");
+console.log(put);
+assert.equal(isFromPaarl("CJ"), true);
