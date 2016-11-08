@@ -17,3 +17,12 @@ var countRegNumb = function(cars){
 }
 var CountReg = countRegNumb("CA 182736,CY 523519,CJ 812328");
 assert.equal(CountReg, 3);
+
+var isTuesday = function(date){
+  toDay = date.startsWith("tu");
+  //console.log("date");
+  return toDay;
+}
+var results = isTuesday("tuesday");
+console.log(results);
+assert.equal(isTuesday("tuesday"),true);
