@@ -57,3 +57,11 @@ var isFromPaarl = function(routeP){
 var put = isFromPaarl("CJ");
 console.log(put);
 assert.equal(isFromPaarl("CJ"), true);
+
+var isFromGauteng = function(distanceG){
+  distance = distanceG.endsWith("GP");
+
+  return distance;
+}
+var meter = isFromGauteng("GP");
+console.log(meter);
