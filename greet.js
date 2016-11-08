@@ -1,4 +1,5 @@
 //takes name as a param and returns a message
+//this is a string function
 const assert = require("assert");
 var greet = function(name){
 var jah = "how is family "+ name;
@@ -7,6 +8,7 @@ return jah;
 };
 assert.equal(greet("sipho"), "how is family sipho");
 
+// this function combines strings and lists
 var countRegNumb = function(cars){
   //var string = "CA 182736,CY 523519,CJ 812328";
   var count = cars.split(",");
@@ -18,6 +20,7 @@ var countRegNumb = function(cars){
 var CountReg = countRegNumb("CA 182736,CY 523519,CJ 812328");
 assert.equal(CountReg, 3);
 
+// this is a boolean function using a date
 var isTuesday = function(date){
   toDay = date.startsWith("tu");
   //console.log("date");
@@ -27,6 +30,7 @@ var results = isTuesday("tuesday");
 console.log(results);
 assert.equal(isTuesday("tuesday"),true);
 
+// use js string's built in methods(startsWith & endsWith)
 var isFromBellville = function(route){
    rout1 = route.startsWith("CY");
 
@@ -35,3 +39,12 @@ var isFromBellville = function(route){
 var out = isFromBellville("CY");
 console.log(out);
 assert.equal(isFromBellville("CY"), true);
+
+var isFromCapeTown = function(routeC){
+  road = routeC.startsWith("CA");
+
+  return road;
+}
+var speed = isFromCapeTown("CA");
+console.log(speed);
+assert.equal(isFromCapeTown("CA"), true);
