@@ -26,3 +26,12 @@ var isTuesday = function(date){
 var results = isTuesday("tuesday");
 console.log(results);
 assert.equal(isTuesday("tuesday"),true);
+
+var isFromBellville = function(route){
+   rout1 = route.startsWith("CY");
+
+  return rout1;
+}
+var out = isFromBellville("CY");
+console.log(out);
+assert.equal(isFromBellville("CY"), true);
