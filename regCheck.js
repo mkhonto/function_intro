@@ -19,3 +19,4 @@ console.log(isEC);
 var isMP = regCheck("456789 MP", "MP");
 //it should print false
 console.log(isMP);
+assert.equal(regCheck('456789 MP','MP'), false);
