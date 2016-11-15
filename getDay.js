@@ -1,7 +1,12 @@
 const assert = require("assert");
-var data = new Date();
-data.setDate(04);
+var getDay = function(){
+  const date = new Date();
+  var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      weekDay = weekDays[date.getDay()];
 
-console.log(data);
-return data;
-assert.equal(data(setDate), "04");
+  //console.log(weekDays);
+  return weekDay;
+};
+var day = getDay();
+console.log(day);
+assert.equal(getDay(), day);
